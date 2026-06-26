@@ -15,20 +15,7 @@ import CallButton from "./components/CallButton";
 import WhatsAppPopup from "./components/WhatsAppPopup";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 10000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
-
+  
   return (
     <>
       {/* Background Video */}
